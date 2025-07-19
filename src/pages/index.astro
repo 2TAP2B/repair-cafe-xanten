@@ -5,150 +5,191 @@ import Feature from '@components/Feature.astro'
 import Counter from '@components/Counter.astro'
 import ContentMedia from '@components/ContentMedia.astro'
 import ExternalLink from '@components/ExternalLink.astro'
+import { Icon } from 'astro-icon/components'
 import { Accordion, AccordionItem, Avatar, AvatarGroup } from 'accessible-astro-components'
 ---
 
-<DefaultLayout title="Home">
+<DefaultLayout title="Repair Café Xanten">
   <Hero />
-  <section class="my-64">
+  <section id="about" class="my-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Features</h2>
+      <h2 class="mb-12 text-6xl">Über uns</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="lucide:accessibility" title="Accessible by default">
-          Keyboard navigation, focus indicators, ARIA labels, semantic HTML, and more. This theme is designed to be
-          inclusive.
+        <Feature icon="lucide:recycle" title="Müllvermeidung">
+          Wir helfen dabei, defekte Gegenstände zu reparieren statt sie wegzuwerfen. Nachhaltigkeit durch Reparatur ist unser Ziel.
         </Feature>
-        <Feature icon="lucide:puzzle" title="A11Y components">
-          25+ components and counting, all tried and tested for the most optimal accessible experience for your
-          visitors.
+        <Feature icon="lucide:users" title="Wissensvermittlung">
+          Erfahrene Experten geben ihr Wissen weiter und helfen bei der Reparatur verschiedenster Gegenstände.
         </Feature>
-        <Feature icon="lucide:moon" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
+        <Feature icon="lucide:coffee" title="Soziales Miteinander">
+          Bei Kaffee, Gebäck und belegten Brötchen entstehen neue Kontakte und ein lebendiger Austausch.
         </Feature>
-        <Feature icon="lucide:paintbrush" title="Tailwind 4.0">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+        <Feature icon="lucide:wrench" title="Elektro-Geräte">
+          Reparatur von Haushalts- und Elektrogeräten verschiedenster Art mit professioneller Unterstützung.
         </Feature>
-        <Feature icon="lucide:sparkles" title="Prettier">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="lucide:smartphone" title="Digitale Geräte">
+          Hilfe bei Computer, Smartphones, Tablets und anderen digitalen Geräten einschließlich Linux-Systemen.
         </Feature>
-        <Feature icon="lucide:code" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
-        </Feature>
-        <Feature icon="lucide:bookmark" title="Blog & portfolio">
-          This theme comes with a fully integrated blog and portfolio, dynamic pages and SEO optimization.
-        </Feature>
-        <Feature icon="lucide:file-text" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
-        </Feature>
-        <Feature icon="lucide:blocks" title="Design system">
-          The theme offers some very handy utilities to help you build your website faster.
+        <Feature icon="lucide:scissors" title="Textilien & Holz">
+          Reparatur von Kleidung, Textilien, Möbeln und Holzgegenständen durch erfahrene Handwerker.
         </Feature>
       </div>
     </div>
   </section>
   <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible components</h2>
+    <h2>Gemeinsam reparieren</h2>
     <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <ExternalLink href="https://github.com/incluud/accessible-astro-components"
-        >separate package</ExternalLink
-      >. They'll get you up and running in building an accessible solution for your visitors.
+      Im Repair Café möchten wir gemeinsam reparieren, Wissen teilen und Hilfe zur Selbsthilfe geben. 
+      Unter diesen Aspekten erhalten die Besucher Unterstützung von ehrenamtlichen Reparaturhelfern. 
+      Diese Unterstützung umfasst: Untersuchung des Defekts und Beratung, Bereitstellung von Werkzeugen, 
+      Messgeräten und eventuell zur Reparatur benötigte Materialien in geringem Umfang.
     </p>
   </ContentMedia>
   <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.2 AA compliant</h2>
+    <h2>Unentgeltlich & Nachbarschaftlich</h2>
     <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
+      Das Angebot ist nicht kommerziell ausgelegt und erfolgt unentgeltlich. Das Angebot ist im Wege der 
+      Nachbarschaftshilfe und als Gefälligkeit zu verstehen. Ein Anspruch auf Reparatur, Erfolg oder 
+      Wiederzusammenbau (bei Abbruch einer Reparatur), besteht nicht.
     </p>
   </ContentMedia>
-  <section class="my-64">
+  <section id="services" class="my-64">
     <div class="container grid grid-cols-1 gap-12 md:grid-cols-2">
       <div class="flex flex-col items-start gap-4">
-        <h2 class="text-6xl">FAQ</h2>
+        <h2 class="text-6xl">Unsere Reparaturbereiche</h2>
         <p class="text-2xl">
-          This section demonstrates how to effectively use the Accordion component to organize and display frequently
-          asked questions in an accessible and user-friendly way.
+          Wir reparieren eine große Vielfalt von Gegenständen. Hier finden Sie die wichtigsten Bereiche, 
+          in denen unsere ehrenamtlichen Experten helfen können.
         </p>
-        <a class="button" href="/faq">Contact support team</a>
+        <a class="button" href="#contact">Kontakt aufnehmen</a>
       </div>
       <div class="space-content">
         <Accordion>
-          <AccordionItem name="exclusive" title="What is WCAG and why is it important?" open>
+          <AccordionItem name="exclusive" title="Elektro-Divers" open>
             <p>
-              WCAG (Web Content Accessibility Guidelines) is a set of internationally recognized standards for web
-              accessibility. Following WCAG ensures your website is usable by people with various disabilities,
-              including visual, auditory, physical, and cognitive impairments. It's important not just for
-              accessibility, but also for legal compliance, SEO, and reaching a wider audience.
+              Verschiedene Elektrogeräte und elektronische Gegenstände können von unseren Experten untersucht und repariert werden. 
+              Bringen Sie gerne Ihr defektes Gerät mit und wir schauen gemeinsam, was zu machen ist.
             </p>
           </AccordionItem>
-          <AccordionItem name="exclusive" title="What's the difference between ARIA labels and alt text?">
+          <AccordionItem name="exclusive" title="Haushaltsgeräte">
             <p>
-              Alt text is specifically for describing images to screen reader users, while ARIA labels (aria-label,
-              aria-labelledby) can describe any element on a page. Alt text is HTML's native way to provide alternative
-              text for images, while ARIA labels are part of the ARIA specification that helps make dynamic content and
-              advanced UI controls more accessible.
+              Kaffeemaschinen, Mixer, Toaster, Staubsauger und andere Haushaltsgeräte können oft mit einfachen Mitteln 
+              wieder zum Leben erweckt werden. Unsere Experten helfen gerne dabei.
             </p>
           </AccordionItem>
-          <AccordionItem name="exclusive" title="Why is keyboard navigation important?">
+          <AccordionItem name="exclusive" title="Unterhaltungselektronik">
             <p>
-              Keyboard navigation is essential for users who can't use a mouse, including people with motor
-              disabilities, visual impairments, or those who simply prefer keyboard controls. A website should be fully
-              operable using only a keyboard, with visible focus indicators and logical tab order. This includes being
-              able to access all interactive elements and navigate through content efficiently.
+              Radios, CD-Player, Lautsprecher und andere Unterhaltungselektronik - oft sind es nur kleine Defekte, 
+              die behoben werden können. Wir schauen gemeinsam, was möglich ist.
             </p>
           </AccordionItem>
-          <AccordionItem name="exclusive" title="What is a sufficient color contrast ratio?">
+          <AccordionItem name="exclusive" title="Computer & Digitale Geräte">
             <p>
-              According to WCAG 2.2 AA standards, text should have a minimum contrast ratio of 4.5:1 against its
-              background for regular text, and 3:1 for large text (18pt or 14pt bold). For non-text elements like icons
-              or buttons, a minimum ratio of 3:1 is required. This ensures content is readable for users with visual
-              impairments or color blindness.
+              Laptops, PCs, Tablets und Smartphones können komplex sein, aber oft gibt es einfache Lösungen. 
+              Auch bei Linux-Systemen stehen wir mit Rat und Tat zur Seite.
             </p>
           </AccordionItem>
-          <AccordionItem name="exclusive" title="How do I make custom components accessible?">
+          <AccordionItem name="exclusive" title="Textilien & Möbel">
             <p>
-              To make custom components accessible, focus on these key aspects: use semantic HTML where possible,
-              implement proper keyboard support, add appropriate ARIA attributes, manage focus when needed, and ensure
-              adequate color contrast. Always test with screen readers and keyboard navigation. Consider using
-              established design patterns from the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/"
-                >ARIA Authoring Practices Guide</a
-              >.
+              Kleidung nähen, Reißverschlüsse reparieren, Möbel wieder zusammenbauen oder Holzgegenstände ausbessern - 
+              auch in diesen Bereichen können wir helfen.
             </p>
           </AccordionItem>
         </Accordion>
       </div>
     </div>
   </section>
-  <section class="my-64">
+  <section id="team" class="my-64">
     <div class="space-content container">
-      <h2 class="text-6xl">Our community</h2>
+      <h2 class="text-6xl">Unsere Helfer</h2>
       <p class="text-2xl">
-        We're a community of developers who are passionate about making the web more accessible. We're always looking
-        for new ways to improve the accessibility of the web.
+        Verschiedene ehrenamtliche Experten bringen ihre Fähigkeiten ein. Wer da ist, hängt von der Verfügbarkeit ab - 
+        aber gemeinsam finden wir fast immer eine Lösung!
       </p>
-      <AvatarGroup display="grid" gridItemsSize="300px" gridGap="2rem">
-        <Avatar initials="RJ" title="Robert Johnson" subtitle="Manager" />
-        <Avatar initials="MT" title="Maria Torres" subtitle="Developer" />
-        <Avatar initials="AK" title="Alex Kim" subtitle="Designer" />
-        <Avatar initials="SL" title="Sarah Lee" subtitle="Content Strategist" />
-        <Avatar initials="JP" title="James Peterson" subtitle="QA Engineer" />
-        <Avatar initials="LW" title="Lisa Wong" subtitle="Product Owner" />
-        <Avatar initials="DM" title="David Martinez" subtitle="UX Researcher" />
-        <Avatar initials="EB" title="Emma Brown" subtitle="Accessibility Specialist" />
-        <Avatar initials="TC" title="Thomas Chen" subtitle="Frontend Developer" />
-      </AvatarGroup>
+      
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
+        <div class="text-center p-6 border border-gray-200 rounded-lg">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Icon name="lucide:users" class="w-8 h-8 text-blue-600" />
+          </div>
+          <h3 class="text-xl font-bold mb-2">Wechselnde Experten</h3>
+          <p>Je nach Verfügbarkeit helfen verschiedene Freiwillige mit unterschiedlichen Fähigkeiten</p>
+        </div>
+        
+        <div class="text-center p-6 border border-gray-200 rounded-lg">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Icon name="lucide:heart-handshake" class="w-8 h-8 text-green-600" />
+          </div>
+          <h3 class="text-xl font-bold mb-2">Gemeinsam Lernen</h3>
+          <p>Alle lernen voneinander - sowohl Helfer als auch Besucher teilen ihr Wissen</p>
+        </div>
+        
+        <div class="text-center p-6 border border-gray-200 rounded-lg">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Icon name="lucide:user-plus" class="w-8 h-8 text-purple-600" />
+          </div>
+          <h3 class="text-xl font-bold mb-2">Neue Helfer willkommen</h3>
+          <p>Sie haben handwerkliche Fähigkeiten? Kommen Sie gerne vorbei und machen Sie mit!</p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <p class="text-lg italic">
+          "Koordination: Marion Domrath - sie sorgt dafür, dass alles rund läuft"
+        </p>
+      </div>
     </div>
   </section>
-  <section class="mt-64 mb-32">
+  <section id="stats" class="mt-64 mb-32">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Impact in numbers</h2>
+      <h2 class="mb-16 text-6xl">Repair Café in Zahlen</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="900+" title="Stars" sub="On GitHub" />
-        <Counter count="25+" title="Accessible" sub="Components" />
-        <Counter count="400+" title="Commits" sub="Merged" />
-        <Counter count="48+" title="Months" sub="Since launch" />
+        <Counter count="2022" title="Gründungsjahr" sub="Juli" />
+        <Counter count="8+" title="Reparatur-" sub="Bereiche" />
+        <Counter count="1x" title="Jeden" sub="Monat" />
+        <Counter count="12+" title="Monate" sub="Erfahrung" />
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="my-64">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Kontakt & Termine</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+        <div class="space-content">
+          <h3 class="text-4xl mb-8">Adresse & Kontakt</h3>
+          <div class="space-y-4 text-xl">
+            <p><strong>Repair Café Xanten</strong><br>
+            Karthaus 12, 46509 Xanten<br>
+            Haus der Begegnung<br>
+            Deutschland</p>
+            
+            <p><strong>E-Mail:</strong><br>
+            <a href="mailto:repaircafe-xanten@domrath.de" class="text-blue-600 hover:text-blue-800">repaircafe-xanten@domrath.de</a></p>
+            
+            <p><strong>Telefon:</strong><br>
+            Marion Domrath<br>
+            02825-3070207<br>
+            0163-9255389</p>
+          </div>
+        </div>
+        <div class="space-content">
+          <h3 class="text-4xl mb-8">Termine & Hinweise</h3>
+          <div class="space-y-4 text-xl">
+            <p><strong>Wann:</strong><br>
+            Jeden Monat an einem Samstag<br>
+            (meistens am letzten Samstag)</p>
+            
+            <p><strong>Wo:</strong><br>
+            Haus der Begegnung<br>
+            Karthaus 12, Xanten</p>
+            
+            <p><strong>Wichtiger Hinweis:</strong><br>
+            Annahmeschluss: 30 Minuten vor Ende der Veranstaltung</p>
+            
+            <p><strong>Bitte beachten:</strong><br>
+            Mitgebrachte Geräte vorher reinigen</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
