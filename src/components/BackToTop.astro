@@ -1,6 +1,4 @@
 ---
-import { Icon } from 'astro-icon/components'
-
 /**
  * BackToTop Component
  *
@@ -10,107 +8,97 @@ import { Icon } from 'astro-icon/components'
 
 <button
   id="back-to-top"
-  class="fixed bottom-4 right-4 z-50 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform translate-y-16 opacity-0 hover:scale-110 focus:scale-110 focus:outline-none"
+  class="back-to-top fixed bottom-4 right-4 z-50 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:scale-110 focus:outline-none"
   aria-label="Zurück nach oben"
   title="Zurück nach oben"
 >
-  <Icon name="lucide:arrow-up" class="w-5 h-5" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m18 15-6-6-6 6"/>
+  </svg>
 </button>
 
 <script>
-  function initBackToTop() {
-    const backToTopButton = document.getElementById('back-to-top');
-    if (!backToTopButton) return;
-
-    // Show/hide button based on scroll position
-    function toggleVisibility() {
-      if (!backToTopButton) return;
+  // Back to top functionality with proper visibility
+  document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('back-to-top');
+    
+    if (button) {
+      // Click handler
+      button.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
       
-      if (window.scrollY > 300) {
-        backToTopButton.classList.remove('translate-y-16', 'opacity-0');
-        backToTopButton.classList.add('translate-y-0', 'opacity-100');
-      } else {
-        backToTopButton.classList.add('translate-y-16', 'opacity-0');
-        backToTopButton.classList.remove('translate-y-0', 'opacity-100');
-      }
-    }
-
-    // Smooth scroll to top
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+      // Show/hide based on scroll position using CSS classes
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          button.classList.add('show');
+        } else {
+          button.classList.remove('show');
+        }
       });
     }
-
-    // Event listeners
-    window.addEventListener('scroll', toggleVisibility);
-    backToTopButton.addEventListener('click', scrollToTop);
-
-    // Handle keyboard navigation
-    backToTopButton.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        scrollToTop();
-      }
-    });
-
-    // Initial check
-    toggleVisibility();
-  }
-
-  // Initialize on page load
-  document.addEventListener('DOMContentLoaded', initBackToTop);
-
-  // Re-initialize on view transitions
-  document.addEventListener('astro:page-load', initBackToTop);
+  });
 </script>
 
 <style>
-  #back-to-top {
-    /* Ensure proper stacking above other elements */
-    z-index: 9999;
+  .back-to-top {
+    /* Corporate design colors with light-dark theme support */
     background-color: light-dark(var(--color-primary-300), var(--color-primary-100));
     color: light-dark(var(--color-neutral-900), var(--color-neutral-900));
     border: 2px solid light-dark(var(--color-primary-200), var(--color-primary-100));
+    z-index: 9999;
+    
+    /* Initial hidden state */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
   }
   
-  #back-to-top:hover,
-  #back-to-top:focus-visible {
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .back-to-top:hover,
+  .back-to-top:focus-visible {
     background-color: light-dark(var(--color-primary-400), var(--color-primary-300));
     border-color: light-dark(var(--color-primary-300), var(--color-primary-200));
+    transform: translateY(-2px) scale(1.1);
   }
   
-  #back-to-top:focus-visible {
+  .back-to-top:focus-visible {
     outline: 2px solid light-dark(var(--color-primary-400), var(--color-primary-200));
     outline-offset: 2px;
   }
   
-  [data-icon] {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  
   /* Mobile-specific positioning to ensure it stays within viewport */
   @media (max-width: 768px) {
-    #back-to-top {
+    .back-to-top {
       bottom: 1rem !important;
       right: 1rem !important;
       padding: 0.75rem;
     }
     
-    [data-icon] {
-      width: 1rem;
-      height: 1rem;
+    .back-to-top svg {
+      width: 16px;
+      height: 16px;
     }
   }
   
   /* Very small screens */
   @media (max-width: 360px) {
-    #back-to-top {
+    .back-to-top {
       bottom: 0.75rem !important;
       right: 0.75rem !important;
       padding: 0.625rem;
+    }
+    
+    .back-to-top svg {
+      width: 14px;
+      height: 14px;
     }
   }
 </style>

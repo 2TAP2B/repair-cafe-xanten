@@ -1,0 +1,93 @@
+---
+/**
+ * Simple Back-to-Top Button using anchor link (like the navigation)
+ */
+---
+
+<a 
+  href="#top"
+  id="back-to-top-btn"
+  aria-label="Nach oben scrollen"
+  title="Nach oben"
+  class="back-to-top-button"
+>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <polyline points="18,15 12,9 6,15"></polyline>
+  </svg>
+</a>
+
+<style>
+  .back-to-top-button {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    text-decoration: none;
+    
+    /* Corporate design colors */
+    background-color: var(--color-primary-200, #e879f9);
+    color: var(--color-neutral-900, #1f2937);
+    border-color: var(--color-primary-300, #d946ef);
+    
+    /* Shadow and transitions */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    
+    /* Center the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .back-to-top-button:hover {
+    background-color: var(--color-primary-300, #d946ef);
+    border-color: var(--color-primary-400, #c026d3);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  
+  .back-to-top-button:active {
+    transform: translateY(-1px) scale(0.98);
+  }
+  
+  .back-to-top-button:focus {
+    outline: 2px solid var(--color-primary-400, #c026d3);
+    outline-offset: 2px;
+    text-decoration: none;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .back-to-top-button {
+      bottom: 1rem;
+      right: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    
+    .back-to-top-button svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .back-to-top-button {
+      bottom: 0.75rem;
+      right: 0.75rem;
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+    
+    .back-to-top-button svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+</style>
