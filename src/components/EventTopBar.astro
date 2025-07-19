@@ -1,0 +1,60 @@
+---
+import { Icon } from 'astro-icon/components'
+
+/**
+ * EventTopBar Component
+ *
+ * @description A top announcement bar displaying the next event information
+ */
+---
+
+<div class="event-top-bar py-2 md:py-3 border-b shadow-lg">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-center gap-2 md:gap-4 text-sm md:text-base">
+      <div class="flex items-center bg-black/20 rounded-full p-1.5 md:p-2">
+        <Icon name="lucide:calendar" />
+      </div>
+      
+      <div class="flex items-center gap-1 md:gap-2 font-medium">
+        <span class="text-xs md:text-sm hidden sm:inline font-semibold">Nächstes Repair Café:</span>
+        <span class="text-xs md:text-sm sm:hidden font-semibold">Nächstes Café:</span>
+        <span class="font-bold bg-black/20 px-2 py-0.5 rounded text-sm md:text-base shadow-sm">26.07.2025</span>
+        <span class="text-xs md:text-sm hidden lg:inline opacity-90">11-14 Uhr</span>
+        <span class="text-xs md:text-sm hidden md:inline lg:hidden opacity-90">11-14h</span>
+        <span class="text-xs md:text-sm hidden md:inline opacity-90">Haus der Begegnung, Karthaus 12</span>
+        <span class="text-xs md:hidden opacity-90">Karthaus 12</span>
+      </div>
+      
+      <a href="#stats" class="flex items-center bg-black/20 hover:bg-black/30 rounded-full p-1.5 md:p-2 transition-all duration-300 hover:translate-x-0.5 hover:shadow-sm">
+        <Icon name="lucide:arrow-right" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .event-top-bar {
+    background: linear-gradient(
+      to right,
+      light-dark(var(--color-primary-300), var(--color-primary-200)),
+      light-dark(var(--color-secondary-300), var(--color-secondary-200))
+    );
+    color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+    border-bottom-color: light-dark(var(--color-neutral-200), var(--color-neutral-700));
+  }
+  
+  [data-icon] {
+    width: 0.75rem;
+    height: 0.75rem;
+    color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+  }
+  
+  @media (min-width: 768px) {
+    [data-icon] {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+</style>
+
+

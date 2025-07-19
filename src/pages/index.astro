@@ -19,24 +19,27 @@ import { Accordion, AccordionItem, Avatar, AvatarGroup } from 'accessible-astro-
           Wir helfen dabei, defekte Gegenstände zu reparieren statt sie wegzuwerfen. Nachhaltigkeit durch Reparatur ist unser Ziel.
         </Feature>
         <Feature icon="lucide:users" title="Wissensvermittlung">
-          Erfahrene Experten geben ihr Wissen weiter und helfen bei der Reparatur verschiedenster Gegenstände.
+          Erfahrene Profis teilen ihr Wissen und unterstützen dich dabei, deine Gegenstände selbst zu reparieren.
         </Feature>
         <Feature icon="lucide:coffee" title="Soziales Miteinander">
-          Bei Kaffee, Gebäck und belegten Brötchen entstehen neue Kontakte und ein lebendiger Austausch.
+          Bei Kaffee & Gebäck entstehen neue Kontakte und ein lebendiger Austausch.
         </Feature>
-        <Feature icon="lucide:wrench" title="Elektro-Geräte">
-          Reparatur von Haushalts- und Elektrogeräten verschiedenster Art mit professioneller Unterstützung.
+        <Feature icon="lucide:smartphone" title="Elektro-Geräte">
+          Du bringst das Gerät, wir das Know-how – gemeinsam kriegen wir’s hin.
         </Feature>
-        <Feature icon="lucide:smartphone" title="Digitale Geräte">
-          Hilfe bei Computer, Smartphones, Tablets und anderen digitalen Geräten einschließlich Linux-Systemen.
-        </Feature>
-        <Feature icon="lucide:scissors" title="Textilien & Holz">
-          Reparatur von Kleidung, Textilien, Möbeln und Holzgegenständen durch erfahrene Handwerker.
-        </Feature>
-      </div>
+<Feature icon="lucide:monitor" title="Windows 10 & Linux Support">
+  Unterstützung bei Problemen mit dem Support-Ende von Windows 10 und Hilfe bei der Installation von Linux.
+</Feature>
+
+        <Feature icon="lucide:scissors" title="Textilien">
+Nadel und Faden statt Wegwerfen – unsere Schneiderinnen unterstützen dich beim Selbernähen und Reparieren.        </Feature>
+     
+</div>
+
+      
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
+  <ContentMedia imgSrc="/undraw_construction-workers.svg">
     <h2>Gemeinsam reparieren</h2>
     <p class="text-2xl">
       Im Repair Café möchten wir gemeinsam reparieren, Wissen teilen und Hilfe zur Selbsthilfe geben. 
@@ -45,7 +48,22 @@ import { Accordion, AccordionItem, Avatar, AvatarGroup } from 'accessible-astro-
       Messgeräten und eventuell zur Reparatur benötigte Materialien in geringem Umfang.
     </p>
   </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+
+    <ContentMedia imgSrc="/undraw_website_zbig.svg" reverseImg={true}>
+      <h2>Linux statt Elektroschrott</h2>
+      <p class="text-2xl">
+        Der Support für Windows 10 endet am <strong>14. Oktober 2025</strong>.  
+        Microsoft empfiehlt, neue Geräte zu kaufen – aber was wäre, wenn dein aktueller Rechner mit dem richtigen System  
+        <strong>wieder schnell und sicher</strong> laufen könnte?
+
+  Durch die Initiative <strong>„endof10“</strong> wurden wir auf diese Problematik aufmerksam.  
+  Im Repair Café zeigen wir dir, wie du mit <strong>Linux</strong> vielen älteren Laptops ein zweites Leben schenken kannst.  
+  Linux läuft besonders gut auf älterer Hardware – schnell, stabil und ressourcenschonend.
+</p>
+
+    </p>
+  </ContentMedia>
+    <ContentMedia imgSrc="/undraw_neighbors_z879.svg">
     <h2>Unentgeltlich & Nachbarschaftlich</h2>
     <p class="text-2xl">
       Das Angebot ist nicht kommerziell ausgelegt und erfolgt unentgeltlich. Das Angebot ist im Wege der 
@@ -73,26 +91,22 @@ import { Accordion, AccordionItem, Avatar, AvatarGroup } from 'accessible-astro-
           </AccordionItem>
           <AccordionItem name="exclusive" title="Haushaltsgeräte">
             <p>
-              Kaffeemaschinen, Mixer, Toaster, Staubsauger und andere Haushaltsgeräte können oft mit einfachen Mitteln 
-              wieder zum Leben erweckt werden. Unsere Experten helfen gerne dabei.
+Ob Kaffeemaschine, Mixer, Toaster oder Staubsauger – oft lassen sich Haushaltsgeräte mit etwas Geduld und dem richtigen Know-how wieder reparieren. Unsere erfahrenen Helfer:innen begleiten dich dabei, es selbst zu versuchen. Manchmal klappt es – manchmal nicht, doch gemeinsam finden wir immer eine Lösung.
             </p>
           </AccordionItem>
           <AccordionItem name="exclusive" title="Unterhaltungselektronik">
             <p>
-              Radios, CD-Player, Lautsprecher und andere Unterhaltungselektronik - oft sind es nur kleine Defekte, 
-              die behoben werden können. Wir schauen gemeinsam, was möglich ist.
+Radios, CD-Player, Lautsprecher und ähnliche Geräte haben oft nur kleine Defekte, die sich beheben lassen. Gemeinsam prüfen wir, was möglich ist – und unterstützen dich dabei, selbst aktiv zu werden.
             </p>
           </AccordionItem>
           <AccordionItem name="exclusive" title="Computer & Digitale Geräte">
             <p>
-              Laptops, PCs, Tablets und Smartphones können komplex sein, aber oft gibt es einfache Lösungen. 
-              Auch bei Linux-Systemen stehen wir mit Rat und Tat zur Seite.
+Laptops, PCs, Tablets und Smartphones sind manchmal komplex – trotzdem gibt es oft einfache Lösungen. Unsere erfahrenen Helfer:innen unterstützen dich dabei, selbst aktiv zu werden und deine Geräte wieder zum Laufen zu bringen.
             </p>
           </AccordionItem>
-          <AccordionItem name="exclusive" title="Textilien & Möbel">
+          <AccordionItem name="exclusive" title="Textilien">
             <p>
-              Kleidung nähen, Reißverschlüsse reparieren, Möbel wieder zusammenbauen oder Holzgegenstände ausbessern - 
-              auch in diesen Bereichen können wir helfen.
+Kleidung nähen, Reißverschlüsse reparieren oder Möbel wieder zusammenbauen – auch in diesen Bereichen unterstützen wir dich gerne.
             </p>
           </AccordionItem>
         </Accordion>
@@ -100,60 +114,51 @@ import { Accordion, AccordionItem, Avatar, AvatarGroup } from 'accessible-astro-
     </div>
   </section>
   <section id="team" class="my-64">
-    <div class="space-content container">
-      <h2 class="text-6xl">Unsere Helfer</h2>
-      <p class="text-2xl">
-        Verschiedene ehrenamtliche Experten bringen ihre Fähigkeiten ein. Wer da ist, hängt von der Verfügbarkeit ab - 
+    <div class="container">
+      <h2 class="mb-12 text-6xl">Unsere Helfer</h2>
+      <p class="text-2xl mb-12">
+        Verschiedene ehrenamtliche Experten & Expertinnen bringen ihre Fähigkeiten ein. Wer da ist, hängt von der Verfügbarkeit ab - 
         aber gemeinsam finden wir fast immer eine Lösung!
       </p>
-      
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
-        <div class="text-center p-6 border border-gray-200 rounded-lg">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Icon name="lucide:users" class="w-8 h-8 text-blue-600" />
-          </div>
-          <h3 class="text-xl font-bold mb-2">Wechselnde Experten</h3>
-          <p>Je nach Verfügbarkeit helfen verschiedene Freiwillige mit unterschiedlichen Fähigkeiten</p>
-        </div>
-        
-        <div class="text-center p-6 border border-gray-200 rounded-lg">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Icon name="lucide:heart-handshake" class="w-8 h-8 text-green-600" />
-          </div>
-          <h3 class="text-xl font-bold mb-2">Gemeinsam Lernen</h3>
-          <p>Alle lernen voneinander - sowohl Helfer als auch Besucher teilen ihr Wissen</p>
-        </div>
-        
-        <div class="text-center p-6 border border-gray-200 rounded-lg">
-          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Icon name="lucide:user-plus" class="w-8 h-8 text-purple-600" />
-          </div>
-          <h3 class="text-xl font-bold mb-2">Neue Helfer willkommen</h3>
-          <p>Sie haben handwerkliche Fähigkeiten? Kommen Sie gerne vorbei und machen Sie mit!</p>
-        </div>
-      </div>
-      
-      <div class="text-center mt-8">
-        <p class="text-lg italic">
-          "Koordination: Marion Domrath - sie sorgt dafür, dass alles rund läuft"
-        </p>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="lucide:users" title="Wechselnde Experten">
+          Je nach Verfügbarkeit helfen verschiedene Freiwillige mit unterschiedlichen Fähigkeiten beim Reparieren.
+        </Feature>
+        <Feature icon="lucide:heart-handshake" title="Gemeinsam Lernen">
+          Alle lernen voneinander - sowohl Helfer als auch Besucher teilen ihr Wissen und ihre Erfahrungen.
+        </Feature>
+        <Feature icon="lucide:user-plus" title="Neue Helfer willkommen">
+          Du hast handwerkliche Fähigkeiten? Komm gerne vorbei und mach mit!
+        </Feature>
+        <Feature icon="lucide:wrench" title="Koordination">
+          Die Organisation und Koordination der ehrenamtlichen Helfer:innen sorgt für einen reibungslosen Ablauf.
+        </Feature>
+        <Feature icon="lucide:calendar" title="Regelmäßige Termine">
+          Jeden Monat am letzten Samstag stehen wir für Reparaturen zur Verfügung.
+        </Feature>
+        <Feature icon="lucide:coffee" title="Gemeinschaftsgefühl">
+          Bei Kaffee und Gebäck entsteht eine entspannte Atmosphäre zum Lernen und Reparieren.
+        </Feature>
       </div>
     </div>
   </section>
   <section id="stats" class="mt-64 mb-32">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Repair Café in Zahlen</h2>
+      <h2 class="mb-16 text-6xl">Nächste Termine 2025</h2>
+      <p class="text-2xl text-center mb-12 opacity-90">
+        Wir haben von 11 - 14 Uhr für euch geöffnet
+      </p>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="2022" title="Gründungsjahr" sub="Juli" />
-        <Counter count="8+" title="Reparatur-" sub="Bereiche" />
-        <Counter count="1x" title="Jeden" sub="Monat" />
-        <Counter count="12+" title="Monate" sub="Erfahrung" />
+        <Counter count="26.07" title="Juli" sub="Samstag" />
+        <Counter count="30.08" title="August" sub="Samstag" />
+        <Counter count="27.09" title="September" sub="Samstag" />
+        <Counter count="25.10" title="Oktober" sub="Samstag" />
       </div>
     </div>
   </section>
   <section id="contact" class="my-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Kontakt & Termine</h2>
+      <h2 class="mb-16 text-6xl">Kontakt</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
         <div class="space-content">
           <h3 class="text-4xl mb-8">Adresse & Kontakt</h3>
@@ -176,8 +181,8 @@ import { Accordion, AccordionItem, Avatar, AvatarGroup } from 'accessible-astro-
           <h3 class="text-4xl mb-8">Termine & Hinweise</h3>
           <div class="space-y-4 text-xl">
             <p><strong>Wann:</strong><br>
-            Jeden Monat an einem Samstag<br>
-            (meistens am letzten Samstag)</p>
+            Jeden letzten Samstag im Monat<br>
+            </p>
             
             <p><strong>Wo:</strong><br>
             Haus der Begegnung<br>

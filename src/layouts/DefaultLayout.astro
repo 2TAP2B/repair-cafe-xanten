@@ -2,8 +2,10 @@
 import '../styles/tailwind.css'
 import '../assets/scss/index.scss'
 import SiteMeta from '../components/SiteMeta.astro'
+import EventTopBar from '../components/EventTopBar.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import BackToTop from '../components/BackToTop.astro'
 import { ClientRouter } from 'astro:transitions'
 
 const {
@@ -30,11 +32,13 @@ const {
     <ClientRouter />
   </head>
   <body>
+    <EventTopBar />
     <Header />
     <main id="main-content" transition:animate="fade">
       <slot />
     </main>
     <Footer />
+    <BackToTop />
     <style lang="scss" is:global>
       // sticky footer on low content pages
       html,

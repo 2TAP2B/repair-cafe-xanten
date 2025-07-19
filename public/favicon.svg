@@ -1,9 +1,61 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_907_31" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
-<rect width="512" height="512" rx="80" fill="#161618"/>
-</mask>
-<g mask="url(#mask0_907_31)">
-<path d="M166.892 69.3845H390.357L226.065 315.018H2.6001L166.892 69.3845Z" fill="#42E0CE"/>
-<path d="M176.677 337.783L113.043 432.923H347.108L511.4 187.29H338.645L237.988 337.783H176.677Z" fill="#A14FD6"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11">
+      <path
+         d="M -363.28396,-1072.9507 H 2291.5459 V 1581.8791 H -363.28396 Z"
+         clip-rule="evenodd"
+         id="path12"
+         style="stroke-width:1.69909" />
+    </clipPath>
+  </defs>
+  <mask
+     id="mask0_907_31"
+     maskUnits="userSpaceOnUse"
+     x="0"
+     y="0"
+     width="512"
+     height="512">
+    <rect
+       width="512"
+       height="512"
+       rx="80"
+       fill="#161618"
+       id="rect1"
+       x="0"
+       y="0" />
+  </mask>
+  <g
+     id="g2"
+     transform="translate(0.69038669,42.653084)">
+    <path
+       id="path16"
+       d="M 392.45099,0 V 196.242 L 196.17799,0 Z M 0,0 196.17799,196.242 V 0 Z M 392.45099,392.45099 V 196.242 h -196.273 z m -196.273,0 V 196.242 H 0 Z"
+       style="fill:#ff76fb;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.75256191,0,0,0.75256191,103.56238,81.658474)"
+       clip-path="url(#clipPath11)" />
+    <path
+       id="path8-9"
+       d="M 392.45099,0 V 196.242 L 196.17799,0 Z M 0,0 196.17799,196.242 V 0 Z M 392.45099,392.45099 V 196.242 h -196.273 z m -196.273,0 V 196.242 H 0 Z"
+       style="fill:#ff76fb;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.75256191,0,0,0.75256191,111.55408,49.691691)"
+       clip-path="url(#clipPath11)" />
+    <path
+       id="path15"
+       d="M 392.45099,0 V 196.242 L 196.17799,0 Z M 0,0 196.17799,196.242 V 0 Z M 392.45099,392.45099 V 196.242 h -196.273 z m -196.273,0 V 196.242 H 0 Z"
+       style="fill:#5afce1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.75256191,0,0,0.75256191,111.71318,73.165979)"
+       clip-path="url(#clipPath11)" />
+  </g>
 </svg>
