@@ -39,14 +39,33 @@ import { Icon } from 'astro-icon/components'
       light-dark(var(--color-primary-300), var(--color-primary-200)),
       light-dark(var(--color-secondary-300), var(--color-secondary-200))
     );
+    /* Enhanced text contrast with text shadow for better readability */
     color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+    text-shadow: 
+      light-dark(
+        0 1px 2px rgba(255, 255, 255, 0.8),
+        0 1px 2px rgba(0, 0, 0, 0.8)
+      );
     border-bottom-color: light-dark(var(--color-neutral-200), var(--color-neutral-700));
+  }
+  
+  /* Enhanced background elements for better text contrast */
+  .event-top-bar .bg-black\/20 {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(48, 48, 48, 0.2);
+  }
+  
+  .event-top-bar .bg-black\/20:hover {
+    background-color: rgba(0, 0, 0, 0.4) !important;
   }
   
   [data-icon] {
     width: 0.75rem;
     height: 0.75rem;
     color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+    /* Add subtle drop shadow to icons for better visibility */
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
   }
   
   @media (min-width: 768px) {

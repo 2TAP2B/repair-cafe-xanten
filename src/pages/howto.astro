@@ -1,0 +1,430 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import CallToAction from '../components/CallToAction.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<DefaultLayout title="So geht's | Repair Café Xanten" description="Schritt-für-Schritt Anleitung für Ihren Besuch im Repair Café Xanten. Erfahren Sie, wie Sie Ihre defekten Geräte zu uns bringen und gemeinsam reparieren.">
+  <PageHeader title="So geht's" subtitle="Ihr Weg zur erfolgreichen Reparatur" />
+  
+  <section class="py-2">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        
+        <!-- Introduction -->
+        <div class="text-center mb-12">
+          <h2 class="text-2xl font-bold mb-4">Reparieren leicht gemacht</h2>
+          <p class="text-lg max-w-2xl mx-auto">
+            In nur wenigen Schritten bringst du deine defekten Geräte zu neuem Leben. 
+            Hier erfährst du, wie ein Besuch im Repair Café Xanten abläuft.
+          </p>
+        </div>
+
+        <!-- Steps -->
+        <div class="space-y-8">
+          
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:shield-check" />
+              <div class="step-number">1</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Garantie prüfen</h3>
+              <p class="step-description">
+                Vergewissere dich zunächst, dass für dein Gerät keine gesetzliche und keine Herstellergarantie mehr besteht. 
+                <strong>Wichtig:</strong> Unter Umständen verlierst du deine Garantieansprüche, wenn eine Reparatur im Repair Café vorgenommen wird!
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:calendar-check" />
+              <div class="step-number">2</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Termin wählen</h3>
+              <p class="step-description">
+                Komme an einem unserer Termine zwischen 11 und 14 Uhr mit deinem defekten Gerät ins 
+                <strong>Haus der Begegnung</strong> in Xanten. <p></p>Eine vorherige Anmeldung ist nicht erforderlich!
+              </p>
+
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:file-edit" />
+              <div class="step-number">3</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Formular ausfüllen</h3>
+              <p class="step-description">
+                Fülle das bereitliegende Formular vor Ort aus oder bringe es bereits ausgefüllt mit. 
+                Bitte beachte dabei unsere Veranstaltungsregeln und Sicherheitshinweise. Das Formular findest du auch auf unserer Website zum Herunterladen.
+              </p>
+
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:clock" />
+              <div class="step-number">4</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Wartezeit einplanen</h3>
+              <p class="step-description">
+                Manchmal kann es aufgrund großen Andrangs zu Wartezeiten kommen. 
+                Bringe gerne ein wenig Geduld mit – es lohnt sich!
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:coffee" />
+              <div class="step-number">5</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Gemütlich warten</h3>
+              <p class="step-description">
+                Du kannst die Wartezeit mit einer Tasse Kaffee oder Tee sowie leckerem Gebäck überbrücken. 
+                Nutze die Zeit für nette Gespräche mit anderen Besuchern!
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:megaphone" />
+              <div class="step-number">6</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Aufgerufen werden</h3>
+              <p class="step-description">
+                Schon bald wirst du aufgerufen und kannst zu einem unserer Reparatur-Experten. 
+                Die Wartezeit ist meist kürzer, als du denkst!
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:users" />
+              <div class="step-number">7</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Gemeinsam reparieren</h3>
+              <p class="step-description">
+                Nun kann die Reparatur gemeinsam mit einem unserer Experten beginnen. Sie schauen zu, 
+                helfen mit und lernen dabei, wie dein Gerät funktioniert. Das ist der spannendste Teil!
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:heart" />
+              <div class="step-number">8</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Erfolg feiern</h3>
+              <p class="step-description">
+                Freue dich über die gelungene Reparatur! Dein Gerät funktioniert wieder und du hast 
+                dabei noch etwas gelernt. Das ist ein tolles Gefühl! <p></p>
+                <strong>Nicht immer klappt es:</strong> Hat es mal nicht geklappt, steht eine Wertstofftonne 
+                  für eine sachgerechte Entsorgung bereit. Auch das ist Nachhaltigkeit!
+              </p>
+
+            </div>
+          </div>
+
+          <!-- Step 9 -->
+          <div class="step-card">
+            <div class="step-icon">
+              <Icon name="lucide:share-2" />
+              <div class="step-number">9</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Weitersagen!</h3>
+              <p class="step-description">
+                Und zuletzt ganz wichtig: Berichte in deinem Bekanntenkreis von dem tollen Erlebnis 
+                im Repair Café Xanten! Mund-zu-Mund-Propaganda ist die beste Werbung für unsere Idee.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Important Notes -->
+        <div class="important-notes">
+          <h3 class="important-notes-title">
+            <Icon name="lucide:info" />
+            Wichtige Hinweise
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold mb-2">Was du mitbringen solltest:</h4>
+              <ul class="checklist">
+                <li>Dein defektes Gerät</li>
+                <li>Netzkabel/Ladegerät (falls vorhanden)</li>
+                <li>Ausgefülltes Reparaturformular</li>
+                <li>Etwas Geduld und gute Laune</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Das bieten wir:</h4>
+              <ul class="checklist">
+                <li>Kostenlose Reparaturversuche</li>
+                <li>Fachkundige Beratung</li>
+                <li>Kaffee, Tee und Gebäck</li>
+                <li>Gemeinschaftliches Erlebnis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <CallToAction 
+    title="Bereit für deinen ersten Besuch?" 
+    link="/#stats"
+    linkText="Nächster Termin"
+  />
+</DefaultLayout>
+
+<style lang="scss">
+  @use '../assets/scss/base/breakpoint' as *;
+
+  .step-card {
+    display: flex;
+    gap: var(--space-l);
+    position: relative;
+    padding: var(--space-l);
+    inline-size: calc(100% - var(--space-l));
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    @include breakpoint(xl) {
+      inline-size: 100%;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      z-index: 1;
+      inset: 0;
+      box-shadow: 0 0 0 6px var(--background-color);
+      border: 3px solid var(--border-color-subtle);
+      border-radius: var(--radius-l);
+      background-color: var(--background-color);
+    }
+
+    &::after {
+      z-index: 0;
+      inset: var(--space-m) -0.85rem -0.85rem 1rem;
+      border-radius: var(--radius-l);
+      background-color: var(--link-color);
+    }
+
+    @include breakpoint('m') {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .step-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: var(--space-s);
+
+    [data-icon] {
+      inline-size: 3rem;
+      block-size: 3rem;
+      color: var(--link-color);
+    }
+  }
+
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 2rem;
+    block-size: 2rem;
+    background-color: var(--link-color);
+    color: var(--background-color);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: var(--font-size--1);
+  }
+
+  .step-content {
+    flex: 1;
+  }
+
+  .step-title {
+    font-size: var(--font-size-2);
+    font-weight: bold;
+    margin-bottom: var(--space-s);
+    color: var(--foreground-color);
+  }
+
+  .step-description {
+    line-height: 1.6;
+    color: var(--foreground-color);
+    margin-bottom: var(--space-m);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-s);
+    padding: var(--space-s);
+    border-radius: var(--radius-m);
+    margin-top: var(--space-s);
+    border-left: 4px solid;
+
+    [data-icon] {
+      inline-size: 1.25rem;
+      block-size: 1.25rem;
+      flex-shrink: 0;
+      margin-top: 0.125rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: var(--font-size--1);
+    }
+
+    &--blue {
+      background-color: light-dark(#dbeafe, #1e3a8a);
+      border-color: light-dark(#3b82f6, #60a5fa);
+      color: light-dark(#1e40af, #dbeafe);
+
+      [data-icon] {
+        color: light-dark(#3b82f6, #60a5fa);
+      }
+    }
+
+    &--green {
+      background-color: light-dark(#dcfce7, #14532d);
+      border-color: light-dark(#22c55e, #4ade80);
+      color: light-dark(#166534, #dcfce7);
+
+      [data-icon] {
+        color: light-dark(#22c55e, #4ade80);
+      }
+    }
+
+    &--yellow {
+      background-color: light-dark(#fefce8, #713f12);
+      border-color: light-dark(#eab308, #facc15);
+      color: light-dark(#854d0e, #fefce8);
+
+      [data-icon] {
+        color: light-dark(#eab308, #facc15);
+      }
+    }
+
+    &--red {
+      background-color: light-dark(#fee2e2, #7f1d1d);
+      border-color: light-dark(#ef4444, #f87171);
+      color: light-dark(#991b1b, #fee2e2);
+
+      [data-icon] {
+        color: light-dark(#ef4444, #f87171);
+      }
+    }
+  }
+
+  .important-notes {
+    margin-top: var(--space-3xl);
+    padding: var(--space-xl);
+    background: linear-gradient(135deg, var(--link-color), var(--link-hover-color));
+    border-radius: var(--radius-l);
+    color: var(--background-color);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--link-color), var(--link-hover-color));
+      border-radius: var(--radius-l);
+      opacity: 0.9;
+      z-index: 1;
+    }
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .important-notes-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    font-size: var(--font-size-2);
+    font-weight: bold;
+    margin-bottom: var(--space-l);
+
+    [data-icon] {
+      inline-size: 1.5rem;
+      block-size: 1.5rem;
+    }
+  }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding-left: var(--space-l);
+      margin-bottom: var(--space-2xs);
+      font-size: var(--font-size--1);
+      opacity: 0.9;
+
+      &::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--background-color);
+        font-weight: bold;
+      }
+    }
+  }
+</style>

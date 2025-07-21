@@ -33,9 +33,22 @@ import { Accordion, AccordionItem, Avatar, AvatarGroup } from 'accessible-astro-
 
         <Feature icon="lucide:scissors" title="Textilien">
 Nadel und Faden statt Wegwerfen – unsere Schneiderinnen unterstützen dich beim Selbernähen und Reparieren.        </Feature>
-     
-</div>
 
+</div>
+  <section class="mt-64 mb-32">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Repair Café in Zahlen</h2>
+      <p class="text-xl text-center mb-12 opacity-90">
+        Unsere Erfolge beim gemeinsamen Reparieren
+      </p>
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+        <Counter count="300+" title="Besucher" sub="insgesamt" />
+        <Counter count="200+" title="Reparaturen" sub="erfolgreich" />
+        <Counter count="68%" title="Erfolgsquote" sub="beim Reparieren" />
+        <Counter count="50+ kg" title="Müll" sub="vermeidet" />
+      </div>
+    </div>
+  </section>
       
     </div>
   </section>
@@ -76,7 +89,7 @@ Nadel und Faden statt Wegwerfen – unsere Schneiderinnen unterstützen dich bei
       <div class="flex flex-col items-start gap-4">
         <h2 class="text-6xl">Unser Service</h2>
         <p class="text-2xl">
-          Wir reparieren eine große Vielfalt von Gegenständen. Hier finden Sie die wichtigsten Bereiche, 
+          Wir reparieren eine große Vielfalt von Gegenständen. Hier findest du die wichtigsten Bereiche, 
           in denen unsere ehrenamtlichen Experten helfen können.
         </p>
         <a class="button" href="#contact">Kontakt aufnehmen</a>
@@ -86,7 +99,7 @@ Nadel und Faden statt Wegwerfen – unsere Schneiderinnen unterstützen dich bei
           <AccordionItem name="exclusive" title="Elektro-Divers" open>
             <p>
               Verschiedene Elektrogeräte und elektronische Gegenstände können von unseren Experten untersucht und repariert werden. 
-              Bringen Sie gerne Ihr defektes Gerät mit und wir schauen gemeinsam, was zu machen ist.
+              Bringe gerne dein defektes Gerät mit und wir schauen gemeinsam, was zu machen ist.
             </p>
           </AccordionItem>
           <AccordionItem name="exclusive" title="Haushaltsgeräte">
@@ -106,8 +119,12 @@ Laptops, PCs, Tablets und Smartphones sind manchmal komplex – trotzdem gibt es
           </AccordionItem>
           <AccordionItem name="exclusive" title="Textilien">
             <p>
-Kleidung nähen, Reißverschlüsse reparieren oder Möbel wieder zusammenbauen – auch in diesen Bereichen unterstützen wir dich gerne.
+Kleidung nähen oderReißverschlüsse reparieren – auch in diesen Bereichen unterstützen wir dich gerne.
             </p>
+          </AccordionItem>
+          <AccordionItem name="exclusive" title="Sonstiges">
+            <p>
+Dekoartikel, Spielzeug und Kleinmöbel können auch bei uns begutachtet werden.            </p>
           </AccordionItem>
         </Accordion>
       </div>
@@ -127,8 +144,8 @@ Kleidung nähen, Reißverschlüsse reparieren oder Möbel wieder zusammenbauen �
         <Feature icon="lucide:heart-handshake" title="Gemeinsam Lernen">
           Alle lernen voneinander - sowohl Helfer als auch Besucher teilen ihr Wissen und ihre Erfahrungen.
         </Feature>
-        <Feature icon="lucide:user-plus" title="Neue Helfer willkommen">
-          Du hast handwerkliche Fähigkeiten? Komm gerne vorbei und mach mit!
+        <Feature icon="lucide:user-plus" title="Organisationstalent?">
+           Wir suchen jemanden, der das Drumherum und die Koordination im Griff hat!
         </Feature>
         <Feature icon="lucide:wrench" title="Koordination">
           Die Organisation und Koordination der ehrenamtlichen Helfer:innen sorgt für einen reibungslosen Ablauf.
@@ -181,7 +198,7 @@ Kleidung nähen, Reißverschlüsse reparieren oder Möbel wieder zusammenbauen �
           <h3 class="text-4xl mb-8">Termine & Hinweise</h3>
           <div class="space-y-4 text-xl">
             <p><strong>Wann:</strong><br>
-            Jeden letzten Samstag im Monat<br>
+            An jeweils einem Samstag im Monat<br>
             </p>
             
             <p><strong>Wo:</strong><br>
