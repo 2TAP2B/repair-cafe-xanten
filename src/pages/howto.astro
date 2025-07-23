@@ -2,11 +2,12 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
 import CallToAction from '../components/CallToAction.astro';
+import ExternalLink from '@components/ExternalLink.astro'
 import { Icon } from 'astro-icon/components';
 ---
 
-<DefaultLayout title="So geht's | Repair Café Xanten" description="Schritt-für-Schritt Anleitung für Ihren Besuch im Repair Café Xanten. Erfahren Sie, wie Sie Ihre defekten Geräte zu uns bringen und gemeinsam reparieren.">
-  <PageHeader title="So geht's" subtitle="Ihr Weg zur erfolgreichen Reparatur" />
+<DefaultLayout title="So geht's | Repair Café Xanten" description="Schritt-für-Schritt Anleitung für deinen Besuch im Repair Café Xanten. Erfahre, wie du deine defekten Geräte zu uns bringen und gemeinsam reparieren kannst.">
+  <PageHeader title="So geht's" />
   
   <section class="py-2">
     <div class="container mx-auto px-4">
@@ -65,7 +66,7 @@ import { Icon } from 'astro-icon/components';
               <h3 class="step-title">Formular ausfüllen</h3>
               <p class="step-description">
                 Fülle das bereitliegende Formular vor Ort aus oder bringe es bereits ausgefüllt mit. 
-                Bitte beachte dabei unsere Veranstaltungsregeln und Sicherheitshinweise. Das Formular findest du auch auf unserer Website zum Herunterladen.
+                Bitte beachte dabei unsere Veranstaltungsregeln und Sicherheitshinweise. Das Formular findest du <ExternalLink href="/downloads">hier</ExternalLink> zum Herunterladen.
               </p>
 
             </div>
@@ -125,8 +126,8 @@ import { Icon } from 'astro-icon/components';
             <div class="step-content">
               <h3 class="step-title">Gemeinsam reparieren</h3>
               <p class="step-description">
-                Nun kann die Reparatur gemeinsam mit einem unserer Experten beginnen. Sie schauen zu, 
-                helfen mit und lernen dabei, wie dein Gerät funktioniert. Das ist der spannendste Teil!
+                Nun kann die Reparatur gemeinsam mit einem unserer Experten beginnen. Du schaust zu, 
+                hilfst mit und lernst dabei, wie dein Gerät funktioniert. Das ist der spannendste Teil!
               </p>
             </div>
           </div>
