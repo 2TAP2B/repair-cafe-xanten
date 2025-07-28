@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="242.70319"
+   height="261.74872"
+   viewBox="0 0 242.70318 261.74872"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11"><path
+         d="M -363.28396,-1072.9507 H 2291.5459 V 1581.8791 H -363.28396 Z"
+         clip-rule="evenodd"
+         id="path12"
+         style="stroke-width:1.69909" /></clipPath></defs><g
+     id="g1"
+     transform="translate(972.66378,373.10324)"><path
+       id="path16"
+       d="M 392.45099,0 V 196.242 L 196.17799,0 Z M 0,0 196.17799,196.242 V 0 Z M 392.45099,392.45099 V 196.242 h -196.273 z m -196.273,0 V 196.242 H 0 Z"
+       style="opacity:1;fill:#c83737;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.60182043,0,0,0.60182043,-972.66378,-347.53955)"
+       clip-path="url(#clipPath11)" /><path
+       id="path8-3"
+       d="M 392.45099,0 V 196.242 L 196.17799,0 Z M 0,0 196.17799,196.242 V 0 Z M 392.45099,392.45099 V 196.242 h -196.273 z m -196.273,0 V 196.242 H 0 Z"
+       style="opacity:1;fill:#c83737;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.60182043,0,0,0.60182043,-966.27286,-373.10324)"
+       clip-path="url(#clipPath11)" /><g
+       id="g10"
+       transform="matrix(3.1954618,0,0,3.1954618,-1183.7344,-918.70802)"><path
+         id="path11"
+         d="m 51.314583,176.03468 h 55.448867 v 55.44887 H 51.314583 Z"
+         style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none"
+         transform="matrix(1.3333333,0,0,-1.3333333,0,510.71997)" /></g><path
+       id="path15"
+       d="M 392.45099,0 V 196.242 L 196.17799,0 Z M 0,0 196.17799,196.242 V 0 Z M 392.45099,392.45099 V 196.242 h -196.273 z m -196.273,0 V 196.242 H 0 Z"
+       style="opacity:1;fill:#89a02c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.60182043,0,0,0.60182043,-966.14562,-354.33096)"
+       clip-path="url(#clipPath11)" /></g></svg>
