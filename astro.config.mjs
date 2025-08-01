@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url'
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  site: 'https://repaircafe.xanten.cc/',
+  site: 'https://repaircafe-xanten.de/',
   integrations: [mdx(), icon(), compress()],
   vite: {
     css: {
