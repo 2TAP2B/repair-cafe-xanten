@@ -9,9 +9,17 @@ html {
   overscroll-behavior: none;
   // Ensure consistent scrolling behavior
   scroll-behavior: smooth;
+  // Fix double scrollbar issue in Brave/Chrome
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  // Prevent overscroll on body as well
+  overscroll-behavior: none;
+  // Fix double scrollbar issue
+  min-height: 100%;
+  overflow-x: hidden;
   font-weight: 400;
   font-size: 1.15rem;
   line-height: 1.5;
@@ -24,8 +32,6 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--background-color);
   color: var(--foreground-color);
-  // Prevent overscroll on body as well
-  overscroll-behavior: none;
 }
 
 a {
