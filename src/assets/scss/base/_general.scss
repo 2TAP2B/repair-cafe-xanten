@@ -4,6 +4,13 @@
   navigation: auto;
 }
 
+html {
+  // Prevent overscroll bounce effect in Chrome-based browsers
+  overscroll-behavior: none;
+  // Ensure consistent scrolling behavior
+  scroll-behavior: smooth;
+}
+
 body {
   font-weight: 400;
   font-size: 1.15rem;
@@ -17,6 +24,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--background-color);
   color: var(--foreground-color);
+  // Prevent overscroll on body as well
+  overscroll-behavior: none;
 }
 
 a {
