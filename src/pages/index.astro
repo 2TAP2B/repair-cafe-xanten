@@ -42,10 +42,10 @@ Nadel und Faden statt Wegwerfen – unsere Schneiderinnen unterstützen dich bei
         Unsere Erfolge beim gemeinsamen Reparieren
       </p>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="300+" title="Besucher" sub="insgesamt" />
-        <Counter count="200+" title="Reparaturen" sub="erfolgreich" />
+        <Counter count="350+" title="Besucher" sub="insgesamt" />
+        <Counter count="250+" title="Reparaturen" sub="erfolgreich" />
         <Counter count="68%" title="Erfolgsquote" sub="beim Reparieren" />
-        <Counter count="50+ kg" title="Müll" sub="vermieden" />
+        <Counter count="55+ kg" title="Müll" sub="vermieden" />
       </div>
       
     </div>
@@ -197,6 +197,9 @@ Dekoartikel, Spielzeug und Kleinmöbel können auch bei uns begutachtet werden. 
             
             <p><strong>E-Mail:</strong><br>
             <a href="mailto:info@repaircafe-xanten.de" class="text-blue-600 hover:text-blue-800">info(at)repaircafe-xanten.de</a></p>
+            
+            <p><strong>Matrix:</strong><br>
+             <a href="https://matrix.to/#/#repaircafe:xanten.cc" class="text-blue-600 hover:text-blue-800" target="_blank" rel="noopener noreferrer">#repaircafe:xanten.cc</a></p>
 
           </div>
         </div>
@@ -228,5 +231,14 @@ Dekoartikel, Spielzeug und Kleinmöbel können auch bei uns begutachtet werden. 
     border: 1px solid var(--border-color-subtle);
     border-radius: var(--radius-md);
     padding: var(--space-s);
+  }
+
+  /* Adjust scroll position for sticky header */
+  :target {
+    scroll-margin-top: 120px;
+  }
+  
+  section[id] {
+    scroll-margin-top: 120px;
   }
 </style>
