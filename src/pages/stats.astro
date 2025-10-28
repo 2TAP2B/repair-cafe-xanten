@@ -1,0 +1,57 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout title="Statistiken - Repair Café Xanten">
+  <section class="my-64">
+    <div class="container">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="mb-8">
+          <Icon name="lucide:bar-chart-3" class="w-24 h-24 mx-auto text-blue-600" />
+        </div>
+        <h1 class="text-6xl mb-8">Statistiken</h1>
+        <div class="bg-yellow-100 dark:bg-yellow-900 border-l-4 border-yellow-500 p-6 mb-8 rounded">
+          <div class="flex items-center gap-4">
+            <Icon name="lucide:construction" class="w-12 h-12 text-yellow-600 flex-shrink-0" />
+            <div class="text-left">
+              <h2 class="text-2xl font-bold mb-2">Work in Progress</h2>
+              <p class="text-xl">
+                Diese Seite befindet sich aktuell im Aufbau. Wir arbeiten daran, dir hier bald 
+                detaillierte Statistiken über unsere Reparaturen und Erfolge zu präsentieren.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
+          Schau bald wieder vorbei oder besuche unsere <a href="/#stats" class="text-blue-600 hover:text-blue-800 underline">Hauptseite</a> 
+          für einen ersten Überblick über unsere Erfolge.
+        </p>
+        
+        <a href="/" class="button inline-flex items-center gap-2">
+          <Icon name="lucide:arrow-left" class="inline-block" />
+          Zurück zur Startseite
+        </a>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style>
+  .w-24 {
+    width: 6rem;
+  }
+  
+  .h-24 {
+    height: 6rem;
+  }
+  
+  .w-12 {
+    width: 3rem;
+  }
+  
+  .h-12 {
+    height: 3rem;
+  }
+</style>
