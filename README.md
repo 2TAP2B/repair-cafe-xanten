@@ -6,6 +6,7 @@ A one-page website for Repair Café Xanten, built with Astro and focused on acce
 
 Repair Café Xanten is a community initiative where volunteers help people repair their broken household items for free. Instead of discarding malfunctioning devices, visitors can bring them to our events and learn to fix them with expert guidance. We focus on sustainability, community building, and reducing electronic waste.
 
+
 ## Features
 
 - **One-page design** with smooth anchor navigation
