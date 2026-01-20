@@ -11,5 +11,5 @@ Am Langacker 16<br />
 
 ## Kontakt
 
-Telefon: 028019859910  
-E-Mail: [tobias at steltner.cc](mailto:tobias@steltner.cc)
+Telefon: +49 157 5555 66 43  
+E-Mail: [info(at)repaircafe-xanten.de](mailto:info@repaircafe-xanten.de)
